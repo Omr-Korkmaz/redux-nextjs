@@ -1,12 +1,16 @@
-import Sidebar from "../sidebar/Sidebar"
 import Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer";
+import styles from './layout.module.scss'
 
 const Layout = ({ children }) => {
   return (
-    <div className="content">
+    <div>
+ 
       <Navbar />
-      { children }
-      <Sidebar />
+     <div className={styles.content}>
+        { children }
+       </div>
+      <Footer />
     </div>
   );
 }
