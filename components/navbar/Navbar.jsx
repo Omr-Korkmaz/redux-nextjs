@@ -3,8 +3,10 @@ import { useSelector } from 'react-redux';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search';
 import {useState} from 'react'
 import styles from './navbar.module.css'
+import { margin } from '@mui/system';
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
@@ -30,6 +32,14 @@ const Navbar = () => {
             <a className={styles.navbar__logo}>LOGO</a>
             
             </Link>
+          
+          <div className={styles.navbar__search}>
+
+
+
+            <input className={styles.navbar__search__input} />
+            <SearchIcon className={styles.navbar__search__icon}/>
+          </div>
           
             <ul className={click ? `${styles.navbar__menu} ${styles.active}` : styles.navbar__menu}>
               <li className={styles.navbar__item}>
