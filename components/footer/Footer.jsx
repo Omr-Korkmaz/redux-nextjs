@@ -1,13 +1,12 @@
-import styles from './footer.module.scss';
+import styles from './footer.module.css';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-     <span className={styles.brand}>Sample Redux Shoping Cart</span>{' '}
+      Copyright <span className={styles.brand}>SAMPLE REDUX</span>{' '}
       {new Date().getFullYear()}
     </footer>
   );
 };
 
-
-export default Footer;
+export default Footer

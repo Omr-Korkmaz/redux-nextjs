@@ -1,16 +1,33 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import ProductCard from '../components/ProductCard/ProductCard';
+import styles from '../styles/Home.module.css';
+// import { getProducts } from './api/products/index';
+import data from './api/data.json';
 
-export default function Home() {
-  return (
-    <div>
-      <h1 className={styles.title}>Homepage</h1>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
-      <Link href="">
-        <a className={styles.btn}>BUTTON</a>
-      </Link>
-    </div>
-  )
+
+
+const HomePage = ({products}) => {
+
+    return (
+      <div className={styles.container}>
+        <h1 className={styles.title}>Landscape Picture Shop</h1>
+        <div className={styles.cards}>
+          {products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+    );
+  
+};
+
+function getProducts() {
+  return data;
 }
+
+export default HomePage;
+
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
+}
+
