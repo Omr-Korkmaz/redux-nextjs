@@ -9,11 +9,11 @@ import styles from './navbar.module.css'
 import { margin } from '@mui/system';
 
 const Navbar = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart  = useSelector((state) => state.cart.amount);
 
-  const getItemsCount = () => {
-    return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
-  };
+  // const getItemsCount = () => {
+  //   return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
+  // };
 
 
 
@@ -68,7 +68,10 @@ const Navbar = () => {
                  
                 >
                     <a  className={styles.navbar__links}>Cart
-                   < ShoppingCartIcon /> ({getItemsCount()})</a>
+                   {/* < ShoppingCartIcon /> ({getItemsCount()})</a> */}
+                 ({cart})</a>
+
+                   
               
                 </Link>
               </li>

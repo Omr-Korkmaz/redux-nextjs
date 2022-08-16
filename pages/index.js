@@ -9,7 +9,7 @@ const HomePage = ({products}) => {
 
     return (
       <div className={styles.container}>
-        <h1 className={styles.title}>Landscape Picture Shop</h1>
+        <h1 className={styles.title}>Landscape Book Shop</h1>
         <div className={styles.cards}>
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />

@@ -7,11 +7,11 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className={styles}>
+    <div className={styles.card}>
       <Image src={product.image} height={300} width={220} />
       <h4 className={styles.title}>{product.product}</h4>
-      <h5 className={styles.category}>{product.category}</h5>
-      <p>$ {product.price}</p>
+      <h5 className={styles.category}>Caregory : {product.category}</h5>
+      <p className={styles.price}>Price : ${product.price}</p>
       <button
         onClick={() => dispatch(addToCart(product))}
         className={styles.button}

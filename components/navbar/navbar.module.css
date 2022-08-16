@@ -19,7 +19,7 @@
   align-items: center;
   width: 100%;
   height: 80px;
-  max-width: 1500px;
+  /* max-width: 1500px; */
 }
 
 .mainContainer {
@@ -133,6 +133,39 @@ align-items: center;
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
+  }
+  .navbar__search{
+    background-color: #f5b921;
+  display: flex;
+  position: relative;
+  justify-content: left;
+  margin-right: auto;
+  align-items: center;
+    width: 50%;
+
+    height: 40%;
+    border-radius: 15px;
+   
+  
+  }
+  .navbar__search__input{
+  
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  
+  }
+  .navbar__search__icon {
+    background-color: #f5b921;
+    position:absolute;
+    right: 0px;
+    margin: auto;
+    font-size: 2rem;
+    border-radius: 0 5px 5px 0;
+  
+  
   }
 
   .navbar__menu.active {

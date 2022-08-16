@@ -1,16 +1,24 @@
 .card {
     display: flex;
     flex-direction: column;
+    border: 0.5px solid black;
+    padding: 10px;
   }
   
   .title {
     font-size: 1rem;
-    font-weight: 600;
+   margin: 5px;
   }
   
   .category {
     font-size: 0.8rem;
     text-transform: uppercase;
+    margin: 5px;
+  }
+  .price{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 5px;
   }
   
   .button {
@@ -21,6 +29,7 @@
     text-transform: uppercase;
     border: 2px solid black;
     cursor: pointer;
+    margin: 5px;
   }
   
   .button:hover {

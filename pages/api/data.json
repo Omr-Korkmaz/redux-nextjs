@@ -4,35 +4,40 @@
       "product": "book-1",
       "category": "history",
       "image": "https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg",
-      "price": 36
+      "price": 36,
+      "quantity":1
     },
     {
       "id": 2,
       "product": "book-2",
       "category": "secience",
       "image": "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "price": 21
+      "price": 21,
+      "quantity":1
     },
     {
       "id": 3,
       "product": "book-3",
       "category": "IT",
       "image": "https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "price": 49
+      "price": 49,
+      "quantity":1
     },
     {
       "id": 4,
       "product": "book-4",
       "category": "history",
       "image": "https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "price": 5
+      "price": 5,
+      "quantity":1
     },
     {
       "id": 5,
       "product": "book-5",
       "category": "IT",
       "image": "https://images.pexels.com/photos/273935/pexels-photo-273935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "price": 17
+      "price": 17,
+      "quantity":1
     }
     
   ]
