@@ -1,9 +1,13 @@
-import Image from 'next/image';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../../redux/cart.slice';
-import styles from './productCard.module.css';
+import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart } from "../../features/cart.slice";
+import styles from "./productCard.module.css";
+
 
 const ProductCard = ({ product }) => {
+
+
+
   const dispatch = useDispatch();
 
   return (
